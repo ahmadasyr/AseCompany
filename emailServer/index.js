@@ -1,11 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const apiRouter = require("./apiRouter");
 const cors = require("cors");
 
 const app = express();
 
-app.use(cors());
 // Use the body-parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -14,6 +14,8 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+
+app.use("/api", apiRouter);
 
 // Define a route to handle POST requests to the contact form
 app.post("/contact", (req, res) => {

@@ -26,7 +26,7 @@ const ContactForm2 = () => {
       body: params.toString(),
     };
 
-    fetch("/api/contact", requestOptions)
+    fetch("api.ase-group.org/api/contact", requestOptions)
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.error(error));

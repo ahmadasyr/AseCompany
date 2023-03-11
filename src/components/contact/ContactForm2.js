@@ -26,7 +26,7 @@ const ContactForm2 = () => {
       body: params.toString(),
     };
 
-    fetch("http://localhost/contact", requestOptions)
+    fetch("http://localhost/api/contact", requestOptions)
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.error(error));

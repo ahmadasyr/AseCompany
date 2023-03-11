@@ -25,8 +25,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use("/api", apiRouter);
-
 // Define a route to handle POST requests to the contact form
 app.post("/contact", (req, res) => {
   // Extract form data from request body

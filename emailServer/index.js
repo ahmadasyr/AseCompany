@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "http://ase-group.org",
 };
 
 app.use(cors(corsOptions));

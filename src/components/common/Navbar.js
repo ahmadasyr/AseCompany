@@ -55,7 +55,10 @@ export default function Navbar({ children }) {
                 <div className='logo-box'>
                   <Link to='/' className='logo'>
                     <img
-                      style={{ width: "80%", maxWidth: "40vw" }}
+                      style={{
+                        height: "3.5rem",
+                        width: "auto",
+                      }}
                       src={"/images/ASE group-03.svg"}
                       alt='logo'
                     />
@@ -101,13 +104,13 @@ export default function Navbar({ children }) {
                     <div className='side-menu-wrap'>
                       <ul className='side-menu-ul'>
                         <li className='sidenav__item'>
-                          <a href='/'>home</a>
+                          <Link to='/'>home</Link>
                         </li>
                         <li className='sidenav__item'>
-                          <a href='/about'>about</a>
+                          <Link to='/about'>about</Link>
                         </li>
                         <li className='sidenav__item'>
-                          <a href='/contact'>contact</a>
+                          <Link to='/contact'>contact</Link>
                         </li>
                       </ul>
                     </div>
@@ -129,14 +132,17 @@ export default function Navbar({ children }) {
             <div className='row align-items-center main-menu-content'>
               <div className='col-lg-3'>
                 <div className='logo-box'>
-                  <a href='/' className='logo'>
+                  <Link to='/' className='logo'>
                     <img
                       className='logo'
-                      style={{ width: "10rem" }}
+                      style={{
+                        height: "3.5rem",
+                        width: "auto",
+                      }}
                       src={"/images/ASE group-03.svg"}
                       alt='logo'
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className='col-lg-9'>
@@ -178,13 +184,13 @@ export default function Navbar({ children }) {
                     <div className='side-menu-wrap'>
                       <ul className='side-menu-ul'>
                         <li className='sidenav__item'>
-                          <a href='/'>home</a>
+                          <Link to='/'>home</Link>
                         </li>
                         <li className='sidenav__item'>
-                          <a href='/about'>about</a>
+                          <Link to='/about'>about</Link>
                         </li>
                         <li className='sidenav__item'>
-                          <a href='/contact'>contact</a>
+                          <Link to='/contact'>contact</Link>
                         </li>
                       </ul>
                     </div>
